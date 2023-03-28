@@ -10,8 +10,12 @@ from sqlalchemy import relationship
 
 Base = declarative_base()
 
-class User(Base):
+class ser(Base):
     __tablename__='user'
     user_id=Column(Integer,autoincrement=True,primary_key=True)
     username=Column(String,unique=True)
     email=Column(String,unique=True)
+
+class games(Base):
+    __tablename__='games'
+    Column(Text,,primary_key=True)
